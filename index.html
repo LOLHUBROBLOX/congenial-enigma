@@ -3,17 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Select Person</title>
     <style>
-
+        /* เพิ่ม CSS ที่นี่เพื่อปรับแต่งหน้าเว็บ */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        option {
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
-    <h1>Gallery</h1>
-    <div id="image-gallery">
-        <!-- ใส่ภาพที่นี่ -->
-        <img src="RobloxScreenShot20240420_151753424.png" alt="Image 1">
-      <img src="RobloxScreenShot20240420_151759115.png" alt="Image 2">
-    </div>
+    <h1>Select Person</h1>
+    <form>
+        <label for="person">Choose a person:</label>
+        <select id="person" name="person">
+            <option value="Max">
+                Max
+                <img src="max_image1.png" alt="Max" width="50">
+                <img src="max_image2.png" alt="Max" width="50">
+            </option>
+            <option value="Kat">
+                Kat
+                <img src="kat_image.jpg" alt="Kat" width="50">
+            </option>
+            <option value="GRI">
+                GRI
+                <img src="gri_image.jpg" alt="GRI" width="50">
+            </option>
+        </select>
+    </form>
 </body>
 </html>
